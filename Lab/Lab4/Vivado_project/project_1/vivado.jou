@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May 15 12:35:01 2022
+# Process ID: 12656
+# Current directory: D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6020 D:\USTC\CA2022\Lab\calab-verilog\Lab4\Vivado_project\project_1\project_1.xpr
+# Log file: D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/vivado.log
+# Journal file: D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cpu_tb.tcl
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim

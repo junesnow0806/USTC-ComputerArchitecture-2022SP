@@ -1,0 +1,336 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  1 20:59:38 2022
+# Process ID: 19720
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1
+# Command line: vivado.exe -log cache.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cache.tcl
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/cache.vds
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cache.tcl -notrace
+Command: synth_design -top cache -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1804
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cache' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:3]
+	Parameter LINE_ADDR_LEN bound to: 3 - type: integer 
+	Parameter SET_ADDR_LEN bound to: 3 - type: integer 
+	Parameter TAG_ADDR_LEN bound to: 6 - type: integer 
+	Parameter WAY_CNT bound to: 5 - type: integer 
+	Parameter MEM_ADDR_LEN bound to: 9 - type: integer 
+	Parameter UNUSED_ADDR_LEN bound to: 18 - type: integer 
+	Parameter LINE_SIZE bound to: 8 - type: integer 
+	Parameter SET_SIZE bound to: 8 - type: integer 
+	Parameter MODE bound to: 1 - type: integer 
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 5 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 6 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:104]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+WARNING: [Synth 8-324] index 7 out of range [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:106]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:180]
+INFO: [Synth 8-6157] synthesizing module 'main_mem' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/main_mem.sv:1]
+	Parameter LINE_ADDR_LEN bound to: 3 - type: integer 
+	Parameter ADDR_LEN bound to: 9 - type: integer 
+	Parameter RD_CYCLE bound to: 50 - type: integer 
+	Parameter WR_CYCLE bound to: 50 - type: integer 
+	Parameter LINE_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/mem.sv:2]
+	Parameter ADDR_LEN bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem' (1#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/mem.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'main_mem' (2#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/main_mem.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (3#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'cache_stat_reg' in module 'cache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 | 00000000000000000000000000000000
+                SWAP_OUT |                             0010 | 00000000000000000000000000000001
+                 SWAP_IN |                             0100 | 00000000000000000000000000000010
+              SWAP_IN_OK |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cache_stat_reg' using encoding 'one-hot' in module 'cache'
+WARNING: [Synth 8-327] inferring latch for variable 'way_index_reg' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv:75]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 5     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 40    
+	               32 Bit    Registers := 349   
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 41    
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 81    
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 16    
+	   3 Input   64 Bit        Muxes := 1     
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 7     
+	   4 Input   32 Bit        Muxes := 8     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 744   
+	   4 Input    1 Bit        Muxes := 524   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:02:22 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|main_mem_instance | mem_inst/ram_cell_reg | 4 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:27 ; elapsed = 00:02:25 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|main_mem_instance | mem_inst/ram_cell_reg | 4 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:35 ; elapsed = 00:02:33 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:41 ; elapsed = 00:02:39 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:41 ; elapsed = 00:02:39 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:41 ; elapsed = 00:02:39 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:41 ; elapsed = 00:02:39 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:42 ; elapsed = 00:02:40 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:42 ; elapsed = 00:02:40 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   129|
+|3     |LUT1     |     4|
+|4     |LUT2     |   141|
+|5     |LUT3     |   720|
+|6     |LUT4     |   721|
+|7     |LUT5     |   393|
+|8     |LUT6     |  5078|
+|9     |MUXF7    |  1384|
+|10    |MUXF8    |    44|
+|11    |RAMB36E1 |     4|
+|12    |FDCE     |  3010|
+|13    |FDPE     |     8|
+|14    |FDRE     |   816|
+|15    |FDSE     | 10240|
+|16    |IBUF     |    48|
+|17    |OBUF     |    33|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------+------+
+|      |Instance            |Module   |Cells |
++------+--------------------+---------+------+
+|1     |top                 |         | 22774|
+|2     |  main_mem_instance |main_mem |  1086|
+|3     |    mem_inst        |mem      |     4|
++------+--------------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:42 ; elapsed = 00:02:40 . Memory (MB): peak = 1000.047 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:42 ; elapsed = 00:02:40 . Memory (MB): peak = 1000.047 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:02:42 ; elapsed = 00:02:40 . Memory (MB): peak = 1000.047 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.293 . Memory (MB): peak = 1000.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1561 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cache' is not ideal for floorplanning, since the cellview 'cache' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1000.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:52 ; elapsed = 00:02:51 . Memory (MB): peak = 1000.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/cache.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cache_utilization_synth.rpt -pb cache_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 21:02:34 2022...

@@ -1,0 +1,61 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav

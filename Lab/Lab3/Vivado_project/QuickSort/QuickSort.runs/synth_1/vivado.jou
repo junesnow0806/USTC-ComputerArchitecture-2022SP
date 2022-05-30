@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  1 20:59:38 2022
+# Process ID: 19720
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1
+# Command line: vivado.exe -log cache.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cache.tcl
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/cache.vds
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source cache.tcl -notrace

@@ -1,0 +1,48 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../Src/CPUSrcCode/ALU.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/AddrEx.v" \
+"../../../../../../Src/CPUSrcCode/ExMemSegReg/AddrMem.v" \
+"../../../../../../Src/CPUSrcCode/MemWbSegReg/AddrWb.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/BrTarget.v" \
+"../../../../../../Src/CPUSrcCode/BranchDecision.v" \
+"../../../../../../Src/CPUSrcCode/CSR/CSR_EX.v" \
+"../../../../../../Src/CPUSrcCode/CSR/CSR_Regfile.v" \
+"../../../../../../Src/CPUSrcCode/ControllerDecoder.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/CtrlEx.v" \
+"../../../../../../Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" \
+"../../../../../../Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" \
+"../../../../../../Src/CPUSrcCode/DataExtend.v" \
+"../../../../../../Src/CPUSrcCode/GeneralRegister.v" \
+"../../../../../../Src/CPUSrcCode/Hazard.v" \
+"../../../../../../Src/CPUSrcCode/IfIdSegReg/IR.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/Imm.v" \
+"../../../../../../Src/CPUSrcCode/ImmExtend.v" \
+"../../../../../../Src/CPUSrcCode/Cache/InstructionCache.v" \
+"../../../../../../Src/CPUSrcCode/NPCGenerator.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/Op1.v" \
+"../../../../../../Src/CPUSrcCode/PC.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/PcEx.v" \
+"../../../../../../Src/CPUSrcCode/IfIdSegReg/PcId.v" \
+"../../../../../../Src/CPUSrcCode/RV32ICore.v" \
+"../../../../../../Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" \
+"../../../../../../Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" \
+"../../../../../../Src/CPUSrcCode/ExMemSegReg/Result.v" \
+"../../../../../../Src/CPUSrcCode/MemWbSegReg/WbData.v" \
+
+sv xil_defaultlib  \
+"../../../../../../Src/BPUSrcCode/BHT.sv" \
+"../../../../../../Src/BPUSrcCode/BTB.sv" \
+"../../../../../../Src/BPUSrcCode/BranchPrediction.sv" \
+"../../../../../../Src/CacheSrcCode/cache.sv" \
+"../../../../../../Src/CacheSrcCode/main_mem.sv" \
+"../../../../../../Src/CacheSrcCode/mem.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../../Src/Simulation/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

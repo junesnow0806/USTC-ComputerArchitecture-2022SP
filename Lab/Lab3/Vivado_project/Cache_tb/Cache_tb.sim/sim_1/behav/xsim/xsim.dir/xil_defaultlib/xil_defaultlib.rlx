@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv,1650723109,systemVerilog,,D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/main_mem.sv,,cache,,uvm,,,,,,
+D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache_tb.sv,1650777922,systemVerilog,,,,cache_tb,,uvm,,,,,,
+D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/main_mem.sv,1650719516,systemVerilog,,D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/mem.sv,,main_mem,,uvm,,,,,,
+D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/mem.sv,1650723185,systemVerilog,,D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache_tb.sv,,mem,,uvm,,,,,,
+D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/Cache_tb/Cache_tb.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,

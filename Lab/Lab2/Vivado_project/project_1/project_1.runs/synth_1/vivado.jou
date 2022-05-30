@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 22 22:05:27 2022
+# Process ID: 8328
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log RV32ICore.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RV32ICore.tcl
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/project_1.runs/synth_1/RV32ICore.vds
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RV32ICore.tcl -notrace

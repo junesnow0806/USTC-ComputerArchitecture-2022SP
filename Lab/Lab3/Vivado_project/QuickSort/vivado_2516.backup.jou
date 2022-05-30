@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  1 20:34:27 2022
+# Process ID: 2516
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18044 D:\USTC\Computer_Architecture2022\Lab\calab-verilog\Lab3\Vivado_project\QuickSort\QuickSort.xpr
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/vivado.log
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+report_utilization -name utilization_1

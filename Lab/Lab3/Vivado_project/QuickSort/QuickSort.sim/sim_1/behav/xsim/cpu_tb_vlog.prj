@@ -1,0 +1,45 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../CPUSrcCode/ALU.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/AddrEx.v" \
+"../../../../../../CPUSrcCode/ExMemSegReg/AddrMem.v" \
+"../../../../../../CPUSrcCode/MemWbSegReg/AddrWb.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/BrTarget.v" \
+"../../../../../../CPUSrcCode/BranchDecision.v" \
+"../../../../../../CPUSrcCode/CSR/CSR_EX.v" \
+"../../../../../../CPUSrcCode/CSR/CSR_Regfile.v" \
+"../../../../../../CPUSrcCode/ControllerDecoder.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/CtrlEx.v" \
+"../../../../../../CPUSrcCode/ExMemSegReg/CtrlMem.v" \
+"../../../../../../CPUSrcCode/MemWbSegReg/CtrlWb.v" \
+"../../../../../../CPUSrcCode/DataExtend.v" \
+"../../../../../../CPUSrcCode/GeneralRegister.v" \
+"../../../../../../CPUSrcCode/Hazard.v" \
+"../../../../../../CPUSrcCode/IfIdSegReg/IR.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/Imm.v" \
+"../../../../../../CPUSrcCode/ImmExtend.v" \
+"../../../../../../CPUSrcCode/Cache/InstructionCache.v" \
+"../../../../../../CPUSrcCode/NPCGenerator.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/Op1.v" \
+"../../../../../../CPUSrcCode/PC.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/PcEx.v" \
+"../../../../../../CPUSrcCode/IfIdSegReg/PcId.v" \
+"../../../../../../CPUSrcCode/RV32ICore.v" \
+"../../../../../../CPUSrcCode/IdExSegReg/Reg2Ex.v" \
+"../../../../../../CPUSrcCode/ExMemSegReg/Reg2Mem.v" \
+"../../../../../../CPUSrcCode/ExMemSegReg/Result.v" \
+"../../../../../../CPUSrcCode/MemWbSegReg/WbData.v" \
+
+sv xil_defaultlib  \
+"../../../../../../CacheSrcCode/cache.sv" \
+"../../../../../../CacheSrcCode/main_mem.sv" \
+"../../../../../../CacheSrcCode/mem.sv" \
+
+verilog xil_defaultlib  \
+"../../../../../../CPUSrcCode/Testbench/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

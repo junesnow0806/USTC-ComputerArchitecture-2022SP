@@ -1,0 +1,1460 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 12 12:07:32 2022
+# Process ID: 1988
+# Current directory: D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19124 D:\USTC\CA2022\Lab\calab-verilog\Lab4\Vivado_project\project_1\project_1.xpr
+# Log file: D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/vivado.log
+# Journal file: D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2458] undeclared symbol btb_hit_without_valid, assumed default net type wire [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv:39]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'btb_hit_without_valid' on this module [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv:35]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 999.824 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/USTC/CA2022/Lab/calab-verilog/Lab4/Vivado_project/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 39f762e392f14c329464778369231e93 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'CPU_Debug_DataCache_A2' is not connected on this instance [D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/Simulation/cpu_tb.v:10]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" Line 3. Module cache_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" Line 1. Module main_mem(ADDR_LEN=9) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" Line 1. Module BranchPrediction doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" Line 1. Module BTB_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" Line 2. Module BHT_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.NPC_Generator
+Compiling module xil_defaultlib.PC_IF
+Compiling module xil_defaultlib.PC_ID
+Compiling module xil_defaultlib.InstructionCache
+Compiling module xil_defaultlib.IR_ID
+Compiling module xil_defaultlib.CSR_EX
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.ControllerDecoder
+Compiling module xil_defaultlib.ImmExtend
+Compiling module xil_defaultlib.PC_EX
+Compiling module xil_defaultlib.BR_Target_EX
+Compiling module xil_defaultlib.Op1_EX
+Compiling module xil_defaultlib.Imm_EX
+Compiling module xil_defaultlib.Reg2_EX
+Compiling module xil_defaultlib.Addr_EX
+Compiling module xil_defaultlib.Ctrl_EX
+Compiling module xil_defaultlib.CSR_Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.BranchDecision
+Compiling module xil_defaultlib.Result_MEM
+Compiling module xil_defaultlib.Reg2_MEM
+Compiling module xil_defaultlib.Addr_MEM
+Compiling module xil_defaultlib.Ctrl_MEM
+Compiling module xil_defaultlib.mem(ADDR_LEN=12)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=9)
+Compiling module xil_defaultlib.cache_default
+Compiling module xil_defaultlib.DataExtend
+Compiling module xil_defaultlib.WB_Data_WB
+Compiling module xil_defaultlib.Addr_WB
+Compiling module xil_defaultlib.Ctrl_WB
+Compiling module xil_defaultlib.HarzardUnit
+Compiling module xil_defaultlib.BTB_default
+Compiling module xil_defaultlib.BHT_default
+Compiling module xil_defaultlib.BranchPrediction
+Compiling module xil_defaultlib.RV32ICore
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 999.824 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 999.824 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 999.824 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 12 15:00:47 2022...

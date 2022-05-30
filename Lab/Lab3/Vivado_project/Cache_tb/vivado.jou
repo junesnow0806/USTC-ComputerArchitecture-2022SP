@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 24 13:23:02 2022
+# Process ID: 7196
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/Cache_tb
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3300 D:\USTC\Computer_Architecture2022\Lab\calab-verilog\Lab3\Vivado_project\Cache_tb\Cache_tb.xpr
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/Cache_tb/vivado.log
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/Cache_tb\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/Cache_tb/Cache_tb.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source cache_tb.tcl
+run all
+close_sim

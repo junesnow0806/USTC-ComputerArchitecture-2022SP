@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Apr 22 22:04:44 2022
+# Process ID: 1084
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18656 D:\USTC\Computer_Architecture2022\Lab\calab-verilog\Lab2\Vivado_project\project_1\project_1.xpr
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/vivado.log
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Apr 22 22:05:24 2022] Launched synth_1...
+Run output will be captured here: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/Vivado_project/project_1/project_1.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: RV32ICore
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1279.605 ; gain = 251.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RV32ICore' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/RV32ICore.v:7]
+INFO: [Synth 8-6157] synthesizing module 'NPC_Generator' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/NPCGenerator.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'NPC_Generator' (1#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/NPCGenerator.v:18]
+INFO: [Synth 8-6157] synthesizing module 'PC_IF' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/PC.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PC_IF' (2#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/PC.v:13]
+INFO: [Synth 8-6157] synthesizing module 'PC_ID' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IfIdSegReg/PcId.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'PC_ID' (3#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IfIdSegReg/PcId.v:14]
+INFO: [Synth 8-6157] synthesizing module 'IR_ID' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IfIdSegReg/IR.v:19]
+INFO: [Synth 8-6157] synthesizing module 'InstructionCache' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/Cache/InstructionCache.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionCache' (4#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/Cache/InstructionCache.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'IR_ID' (5#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IfIdSegReg/IR.v:19]
+INFO: [Synth 8-6157] synthesizing module 'CSR_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/CSR/CSR_EX.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CSR_EX' (6#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/CSR/CSR_EX.v:12]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/GeneralRegister.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/GeneralRegister.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ControllerDecoder' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ControllerDecoder.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ControllerDecoder' (8#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ControllerDecoder.v:26]
+INFO: [Synth 8-6157] synthesizing module 'ImmExtend' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ImmExtend.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ImmExtend' (9#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ImmExtend.v:14]
+INFO: [Synth 8-6157] synthesizing module 'PC_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/PcEx.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'PC_EX' (10#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/PcEx.v:14]
+INFO: [Synth 8-6157] synthesizing module 'BR_Target_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/BrTarget.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'BR_Target_EX' (11#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/BrTarget.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Op1_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/Op1.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Op1_EX' (12#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/Op1.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Imm_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/Imm.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_EX' (13#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/Imm.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Reg2_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/Reg2Ex.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'Reg2_EX' (14#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/Reg2Ex.v:15]
+INFO: [Synth 8-6157] synthesizing module 'Addr_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/AddrEx.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Addr_EX' (15#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/AddrEx.v:18]
+INFO: [Synth 8-6157] synthesizing module 'Ctrl_EX' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/CtrlEx.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'Ctrl_EX' (16#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/IdExSegReg/CtrlEx.v:30]
+INFO: [Synth 8-6157] synthesizing module 'CSR_Regfile' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/CSR/CSR_Regfile.v:8]
+	Parameter XLEN bound to: 32 - type: integer 
+	Parameter CSR_NUM bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CSR_Regfile' (17#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/CSR/CSR_Regfile.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ALU.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (18#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ALU.v:14]
+INFO: [Synth 8-6157] synthesizing module 'BranchDecision' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/BranchDecision.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'BranchDecision' (19#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/BranchDecision.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Result_MEM' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/Result.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Result_MEM' (20#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/Result.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Reg2_MEM' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/Reg2Mem.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'Reg2_MEM' (21#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/Reg2Mem.v:15]
+INFO: [Synth 8-6157] synthesizing module 'Addr_MEM' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/AddrMem.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'Addr_MEM' (22#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/AddrMem.v:14]
+INFO: [Synth 8-6157] synthesizing module 'Ctrl_MEM' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/CtrlMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ctrl_MEM' (23#1) [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/ExMemSegReg/CtrlMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'WB_Data_WB' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/MemWbSegReg/WbData.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataCache' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/Cache/DataCache.v:22]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+ERROR: [Synth 8-3391] Unable to infer a block/distributed RAM for 'data_cache_reg' because the memory pattern used is not supported. Failed to dissolve the memory into bits because the number of bits (131072) is too large. Use 'set_param synth.elaboration.rodinMoreOptions {rt::set_parameter dissolveMemorySizeLimit 131072}' to allow the memory to be dissolved into individual bits
+ERROR: [Synth 8-6156] failed synthesizing module 'DataCache' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/Cache/DataCache.v:22]
+ERROR: [Synth 8-6156] failed synthesizing module 'WB_Data_WB' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/MemWbSegReg/WbData.v:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'RV32ICore' [D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab2/SourceCode/PART-code/RV32ICore.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 1692.266 ; gain = 663.965
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+50 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 22 22:24:33 2022...

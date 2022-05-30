@@ -1,0 +1,85 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun May  1 20:34:27 2022
+# Process ID: 2516
+# Current directory: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18044 D:\USTC\Computer_Architecture2022\Lab\calab-verilog\Lab3\Vivado_project\QuickSort\QuickSort.xpr
+# Log file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/vivado.log
+# Journal file: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 20-736] The current top specification, "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv), does not uniquely identify a single design element. Using "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv).
+[Sun May  1 20:35:12 2022] Launched synth_1...
+Run output will be captured here: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 20-736] The current top specification, "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv), does not uniquely identify a single design element. Using "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv).
+[Sun May  1 20:37:11 2022] Launched synth_1...
+Run output will be captured here: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1190.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3191 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cache' is not ideal for floorplanning, since the cellview 'cache' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1190.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1291.320 ; gain = 100.891
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 20-736] The current top specification, "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv), does not uniquely identify a single design element. Using "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv).
+[Sun May  1 20:48:12 2022] Launched synth_1...
+Run output will be captured here: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.362 . Memory (MB): peak = 1836.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cache' is not ideal for floorplanning, since the cellview 'cache' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1843.551 ; gain = 78.195
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1901.855 ; gain = 58.305
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [filemgmt 20-736] The current top specification, "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv), does not uniquely identify a single design element. Using "cache" (Library: xil_defaultlib, File: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/CacheSrcCode/cache.sv).
+[Sun May  1 20:59:35 2022] Launched synth_1...
+Run output will be captured here: D:/USTC/Computer_Architecture2022/Lab/calab-verilog/Lab3/Vivado_project/QuickSort/QuickSort.runs/synth_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1914.023 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1561 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cache' is not ideal for floorplanning, since the cellview 'cache' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1914.023 ; gain = 12.168
+report_utilization -name utilization_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May  1 21:14:08 2022...

@@ -1,0 +1,70 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/AddrEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/AddrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/AddrWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Addr_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/BrTarget.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR_Target_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/BranchDecision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecision
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/CSR/CSR_Regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ControllerDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControllerDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/CtrlEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/CtrlMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/CtrlWb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctrl_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/DataExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/GeneralRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/IR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IR_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Imm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ImmExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/Cache/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/NPCGenerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Op1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op1_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/PcEx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IfIdSegReg/PcId.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/RV32ICore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32ICore
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/IdExSegReg/Reg2Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Reg2Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reg2_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/ExMemSegReg/Result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Result_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CPUSrcCode/MemWbSegReg/WbData.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB_Data_WB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BHT.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BHT
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/BPUSrcCode/BranchPrediction.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchPrediction
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/USTC/CA2022/Lab/calab-verilog/Lab4/Src/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem

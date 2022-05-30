@@ -1,0 +1,39 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../SourceCode/PART-code/ALU.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/AddrEx.v" \
+"../../../../../../SourceCode/PART-code/ExMemSegReg/AddrMem.v" \
+"../../../../../../SourceCode/PART-code/MemWbSegReg/AddrWb.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/BrTarget.v" \
+"../../../../../../SourceCode/PART-code/BranchDecision.v" \
+"../../../../../../SourceCode/PART-code/CSR/CSR_EX.v" \
+"../../../../../../SourceCode/PART-code/CSR/CSR_Regfile.v" \
+"../../../../../../SourceCode/PART-code/ControllerDecoder.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/CtrlEx.v" \
+"../../../../../../SourceCode/PART-code/ExMemSegReg/CtrlMem.v" \
+"../../../../../../SourceCode/PART-code/MemWbSegReg/CtrlWb.v" \
+"../../../../../../SourceCode/PART-code/Cache/DataCache.v" \
+"../../../../../../SourceCode/PART-code/DataExtend.v" \
+"../../../../../../SourceCode/PART-code/GeneralRegister.v" \
+"../../../../../../SourceCode/PART-code/Hazard.v" \
+"../../../../../../SourceCode/PART-code/IfIdSegReg/IR.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/Imm.v" \
+"../../../../../../SourceCode/PART-code/ImmExtend.v" \
+"../../../../../../SourceCode/PART-code/Cache/InstructionCache.v" \
+"../../../../../../SourceCode/PART-code/NPCGenerator.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/Op1.v" \
+"../../../../../../SourceCode/PART-code/PC.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/PcEx.v" \
+"../../../../../../SourceCode/PART-code/IfIdSegReg/PcId.v" \
+"../../../../../../SourceCode/PART-code/RV32ICore.v" \
+"../../../../../../SourceCode/PART-code/IdExSegReg/Reg2Ex.v" \
+"../../../../../../SourceCode/PART-code/ExMemSegReg/Reg2Mem.v" \
+"../../../../../../SourceCode/PART-code/ExMemSegReg/Result.v" \
+"../../../../../../SourceCode/PART-code/MemWbSegReg/WbData.v" \
+"../../../../../../Simulation/testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
